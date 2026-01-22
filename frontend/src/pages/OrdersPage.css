@@ -1,0 +1,122 @@
+.orders-page {
+    padding: var(--space-2xl) 0;
+    min-height: calc(100vh - 200px);
+}
+
+.orders-page h1 {
+    margin-bottom: var(--space-2xl);
+}
+
+.no-orders {
+    text-align: center;
+    padding: var(--space-3xl);
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.no-orders-icon {
+    font-size: 5rem;
+    margin-bottom: var(--space-lg);
+    opacity: 0.5;
+}
+
+.no-orders h2 {
+    margin-bottom: var(--space-sm);
+}
+
+.no-orders p {
+    color: var(--color-text-muted);
+    margin-bottom: var(--space-xl);
+}
+
+.orders-list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-lg);
+    margin-bottom: var(--space-2xl);
+}
+
+.order-card {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-lg);
+}
+
+.order-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: var(--space-md);
+}
+
+.order-info h3 {
+    font-size: var(--font-size-lg);
+    margin: 0 0 var(--space-xs) 0;
+}
+
+.order-date {
+    color: var(--color-text-muted);
+    font-size: var(--font-size-sm);
+    margin: 0;
+}
+
+.order-items {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-sm);
+}
+
+.order-item {
+    display: flex;
+    justify-content: space-between;
+    color: var(--color-text-secondary);
+}
+
+.order-item-qty {
+    color: var(--color-text-muted);
+    font-size: var(--font-size-sm);
+}
+
+.order-more {
+    color: var(--color-text-muted);
+    font-size: var(--font-size-sm);
+    font-style: italic;
+    margin: 0;
+}
+
+.order-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: var(--space-lg);
+    border-top: 1px solid var(--color-border);
+}
+
+.order-total {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-xs);
+}
+
+.order-total span:first-child {
+    color: var(--color-text-muted);
+    font-size: var(--font-size-sm);
+}
+
+.total-amount {
+    font-size: var(--font-size-xl);
+    font-weight: var(--font-weight-bold);
+    color: var(--color-primary-light);
+}
+
+@media (max-width: 768px) {
+    .order-footer {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: var(--space-md);
+    }
+
+    .order-footer .btn {
+        width: 100%;
+    }
+}
