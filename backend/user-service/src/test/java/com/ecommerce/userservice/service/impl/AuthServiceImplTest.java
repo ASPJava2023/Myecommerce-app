@@ -181,7 +181,8 @@ class AuthServiceImplTest {
                 1L,
                 "test@example.com",
                 "encodedPassword",
-                Set.of(new SimpleGrantedAuthority("ROLE_CUSTOMER")));
+                Set.of(new SimpleGrantedAuthority("ROLE_CUSTOMER")),
+                true);
 
         when(authenticationManager.authenticate(any(UsernamePasswordAuthenticationToken.class)))
                 .thenReturn(authentication);
